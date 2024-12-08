@@ -16,6 +16,7 @@ import {
   Zap,
   Trophy,
 } from "lucide-react";
+import Link from "next/link";
 
 const HuvieoLanding = () => {
   const plans = [
@@ -149,12 +150,16 @@ const HuvieoLanding = () => {
               real-time insights.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:space-x-4">
-              <button className="w-full sm:w-auto bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg">
-                Start Free AI Analysis
-              </button>
-              <button className="w-full sm:w-auto border-2 border-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all transform hover:scale-105">
-                Explore AI Features
-              </button>
+              <Link href="/analysis">
+                <button className="w-full sm:w-auto bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg">
+                  Start Free AI Analysis
+                </button>
+              </Link>
+              <Link href="/learn">
+                <button className="w-full sm:w-auto border-2 border-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all transform hover:scale-105">
+                  Start Learning
+                </button>
+              </Link>
             </div>
           </div>
         </div>

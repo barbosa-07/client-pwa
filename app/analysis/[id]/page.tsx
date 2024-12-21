@@ -3,10 +3,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 
 interface Params {
-  id: string;
+  params: Promise<{ id: string }>;
 }
 
-export default async function SingleAnalysis({ params }: { params: Params }) {
+export default async function SingleAnalysis({ params }: Params) {
   const id = (await params).id;
 
   return (

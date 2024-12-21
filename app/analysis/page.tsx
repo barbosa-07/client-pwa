@@ -269,7 +269,18 @@ const ANALYSIS = {
   ],
 };
 
-const FeatureCard = ({ data, colorClass }) => {
+interface FeatureCardProps {
+  data: {
+    id: string;
+    title: string;
+    description: string;
+    features: string[];
+    route: string;
+  };
+  colorClass: string;
+}
+
+const FeatureCard: React.FC<FeatureCardProps> = ({ data, colorClass }) => {
   return (
     <Link className="block no-underline" href={data.route}>
       <Card
@@ -288,7 +299,7 @@ const FeatureCard = ({ data, colorClass }) => {
         </CardHeader>
         <CardContent>
           <div className="flex flex-wrap gap-1.5 sm:gap-2">
-            {data.features.map((feature: any, index: number) => (
+            {data.features.map((feature: string, index: number) => (
               <Badge
                 key={index}
                 variant="secondary"

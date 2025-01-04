@@ -33,7 +33,7 @@ const colorClasses = [
   "bg-trueGray-50 border-trueGray-400",
 ];
 
-const ANALYSIS = {
+export const ANALYSIS = {
   tools: [
     {
       id: "1",
@@ -46,6 +46,7 @@ const ANALYSIS = {
         "Logical puzzles",
       ],
       route: "/analysis/check-iq",
+      slug: "check-iq",
     },
     {
       id: "2",
@@ -57,6 +58,7 @@ const ANALYSIS = {
         "Personality insights",
       ],
       route: "/analysis/find-strengths",
+      slug: "find-strengths",
     },
     {
       id: "3",
@@ -68,6 +70,7 @@ const ANALYSIS = {
         "Situational judgment tests",
       ],
       route: "/analysis/find-weaknesses",
+      slug: "find-weaknesses",
     },
     {
       id: "4",
@@ -80,6 +83,7 @@ const ANALYSIS = {
         "Skill mapping",
       ],
       route: "/analysis/career-path-matcher",
+      slug: "career-path-matcher",
     },
     {
       id: "5",
@@ -92,6 +96,7 @@ const ANALYSIS = {
         "Relationship management",
       ],
       route: "/analysis/eq-assessment",
+      slug: "eq-assessment",
     },
     {
       id: "6",
@@ -104,6 +109,7 @@ const ANALYSIS = {
         "Communication ability",
       ],
       route: "/analysis/remote-work-aptitude",
+      slug: "remote-work-aptitude",
     },
     {
       id: "7",
@@ -116,6 +122,7 @@ const ANALYSIS = {
         "Kinesthetic preference",
       ],
       route: "/analysis/learning-style",
+      slug: "learning-style",
     },
     {
       id: "8",
@@ -128,6 +135,7 @@ const ANALYSIS = {
         "Delegation strategies",
       ],
       route: "/analysis/time-management",
+      slug: "time-management",
     },
     {
       id: "9",
@@ -140,6 +148,7 @@ const ANALYSIS = {
         "Focused session planning",
       ],
       route: "/analysis/study-method",
+      slug: "study-method",
     },
     {
       id: "10",
@@ -151,6 +160,7 @@ const ANALYSIS = {
         "Coping strategy evaluation",
       ],
       route: "/analysis/stress-management",
+      slug: "stress-management",
     },
     {
       id: "11",
@@ -163,6 +173,7 @@ const ANALYSIS = {
         "Value-based career suggestions",
       ],
       route: "/analysis/career-values",
+      slug: "career-values",
     },
     {
       id: "12",
@@ -174,6 +185,7 @@ const ANALYSIS = {
         "Career case studies",
       ],
       route: "/analysis/personality-job-match",
+      slug: "personality-job-match",
     },
     {
       id: "13",
@@ -185,6 +197,7 @@ const ANALYSIS = {
         "Skill alignment",
       ],
       route: "/analysis/subject-interest",
+      slug: "subject-interest",
     },
     {
       id: "14",
@@ -196,6 +209,7 @@ const ANALYSIS = {
         "Brainstorming activities",
       ],
       route: "/analysis/creative-potential",
+      slug: "creative-potential",
     },
     {
       id: "15",
@@ -208,6 +222,7 @@ const ANALYSIS = {
         "Habit-building suggestions",
       ],
       route: "/analysis/study-work-balance",
+      slug: "study-work-balance",
     },
     {
       id: "16",
@@ -220,6 +235,7 @@ const ANALYSIS = {
         "Technology awareness test",
       ],
       route: "/analysis/tech-aptitude",
+      slug: "tech-aptitude",
     },
     {
       id: "17",
@@ -232,6 +248,7 @@ const ANALYSIS = {
         "Independence assessment",
       ],
       route: "/analysis/college-readiness",
+      slug: "college-readiness",
     },
     {
       id: "18",
@@ -243,6 +260,7 @@ const ANALYSIS = {
         "Innovation brainstorming",
       ],
       route: "/analysis/innovation-potential",
+      slug: "innovation-potential",
     },
     {
       id: "19",
@@ -254,6 +272,7 @@ const ANALYSIS = {
         "Tips for articulation",
       ],
       route: "/analysis/public-speaking",
+      slug: "public-speaking",
     },
     {
       id: "20",
@@ -265,6 +284,7 @@ const ANALYSIS = {
         "Financial decision-making",
       ],
       route: "/analysis/financial-literacy",
+      slug: "financial-literacy",
     },
   ],
 };
